@@ -1,0 +1,26 @@
+.products_page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin-top: 80px;
+    overflow: hidden;  
+}
+.prolistcont{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 604px) {
+    .prolistcont{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 836px) {
+  .products_page{
+    display: flex;
+    flex-direction: column;
+    margin-top: 105px;
+  }
+}

@@ -1,0 +1,53 @@
+.Service_C{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Service_C h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.serviceflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.Sbox{
+    height: 90px;
+    width: 300px;
+    background-color: rgb(195, 185, 185);
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+}
+.sdesc h5{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.sdesc p{
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .serviceflex{
+        gap: 20px;
+    }
+    .Service_C{
+        height: 100%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .Sbox{
+        margin: 2px;
+    }
+}

@@ -1,0 +1,25 @@
+.amt_toggle{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.amt_inner{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 0.1px;
+}
+
+.amt_inner div{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    font-family: 'Unicode', Geneva, Verdana, sans-serif
+   
+}
+.counter:hover{
+    background-color: rgb(233, 212, 212);
+    cursor: pointer;
+    color: black;
+}

@@ -1,0 +1,14 @@
+.Error{
+    text-align: center;
+}
+.Error h2{
+    font-weight: 300;
+    font-size: 40px;
+    font-family: poppins;
+}
+.Error button{
+    padding: 10px 25px;
+    background-color: rgb(225, 195, 225);
+    letter-spacing: 3px;
+    font-weight: 500;
+}

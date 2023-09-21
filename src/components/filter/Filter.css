@@ -1,0 +1,94 @@
+.rating_comp{
+    margin-top: 10px;
+}
+.rating_comp h3{
+    margin-bottom: 5px;
+}
+.categories{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+}
+.categories h3{
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.categories button{
+    border: none;
+    padding: 4px;
+    width: 180px;
+    margin: 2px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-bottom: 2px solid purple;
+}
+.filter{
+    background-color: rgb(228, 215, 215);
+    width: 28%;
+    padding: 5px;
+}
+.filternone{
+    background-color: rgb(228, 215, 215);
+    width: 28%;
+    padding: 5px;
+}
+.ourmaindicc{
+    display: flex;
+    background-color: red;
+    width: 300px;
+}
+
+.products{
+    width: 100%;
+    display: flex;  
+    flex-wrap: wrap;
+}
+.filter>h2{
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid black;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+.filternone>h2{
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid black;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+.sortby h3{
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.sortby form{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.PR_handle h5{
+    font-family: 'sans-serif';
+    font-size: 30px;
+}
+
+@media screen and (max-width: 836px) {
+    .filter{
+        /* display: none; */
+        position: absolute;
+        top: 145px;
+        left: 0px;
+        width: 90%;
+        height: 95%;
+    }
+    .filternone{
+        display: none;
+    }
+    
+}

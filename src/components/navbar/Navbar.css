@@ -1,0 +1,177 @@
+.navbar{
+  display: flex;
+  background-color: rgb(228, 215, 215);
+  padding: 10px 20px;
+  justify-content: space-between;
+  height: 60px;
+  box-shadow: 0px 0px 10px gray;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  align-items: center;
+}
+.navbar_right ul{
+  display: flex;
+}
+.navbar_left{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar_left h2{
+  font-weight: 500;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: andika;
+}
+.navbar_center{
+  text-align: center;
+  flex: 1;
+}
+.navbar_center input{
+  padding: 5px 10px;
+  margin-right: 2px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+}
+.navbar_center button{
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+
+.navbar_right{
+  flex: 1;
+  height: 60px;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  
+}
+.navbar_right div{
+  display: flex;
+  gap: 20px;
+}
+.navbar_right div .linkss{
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: poppins;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.navbar_right div .linkss li{
+  background-color: rgb(138, 65, 138);
+  padding: 4px 8px;
+  color: whitesmoke;
+  border-radius: 10px;
+}
+.navbar_right div .linkss li:hover{
+  background-color: rgb(213, 27, 213);
+}
+.navbar_right button{
+  padding: 4px 13px;
+  cursor: pointer;
+  font-family: poppins ;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.wishlist{
+  cursor: pointer;
+}
+.badge{
+  cursor: pointer;
+}
+.navbar_left img{
+  width: 35px;
+}
+.Navbar_home{
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: ambika;
+  color: purple;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .navbar_left img{
+    width: 25px;
+  }
+  .navbar_left{
+    display: flex;
+    align-items: center;
+    
+  }
+  .navbar_left h2{
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .navbar_center{
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 100%;
+    padding: 0px;
+    margin-right: -10px;
+  }
+  .navbar_center input{
+    width: 70%;
+    border-radius: 20px;
+    padding: 7px 19px;
+  }
+  .navbar_center button{
+    width: 25%;
+    border-radius: 20px;
+    padding: 6px 18px;
+  }
+  
+  .navbar_right .navbar_right_right{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar_left h2{
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .navbar_center{
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar_center input{
+    width: 200px;
+  }
+  .navbar_right .nav_menu{
+    display: none;
+  }
+  .navbar_right div{
+    gap: 10px;
+  }
+  .navbar_center{
+    margin-right: 50px;
+  }
+
+}
+@media screen and (min-width: 1100px) { 
+  .navbar_center input{
+    width: 380px;
+  }
+}

@@ -1,0 +1,79 @@
+.prod{
+    width: 32%;
+    margin: 5px;
+}
+.prod_card{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.prod_img{
+    width: 100%;
+    text-align: center;
+}
+.prod_img img{
+    width: 60%;
+    height: 200px;
+}
+.prod_desc h4{
+    font-family: poppins;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 15px;
+    height: 80px;
+}
+.prod_desc{
+    text-align: left;
+}
+.prod_desc span{
+    display: flex;
+    align-items: center;
+}
+.prod_desc p{
+    font-weight: 600;
+    font-family:  roboto;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.prod_card button{
+    padding: 7px;
+    margin-right: 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.3s ease-out;
+}
+.prod_card button:hover{
+  color: black;
+  background-color:  rgb(228, 215, 215);
+  
+}
+.products_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.products_btn button{
+    padding: 2px;
+    width: 8rem;
+    height: 30px;
+}
+
+
+@media screen and (max-width: 1234px) {
+    .prod{
+        width: 48%;
+        margin: 5px;
+    }
+}
+@media screen and (max-width: 604px) {
+    .prod{
+        width: 80%;
+        margin: 5px;
+    }
+}
+
+

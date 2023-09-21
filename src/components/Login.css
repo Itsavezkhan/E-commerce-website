@@ -1,0 +1,84 @@
+.loginCont {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginBox {
+  background-color: rgb(235, 220, 235);
+  border: 2px solid purple;
+  padding: 30px 60px;
+  gap: 10px;
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.loginForm {
+  width: 80%;
+}
+.loginBox h2 {
+  text-transform: capitalize;
+  font-family: ambika;
+  color: purple;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.loginBox h4 {
+  margin-bottom: 10px;
+}
+
+.loginBox h3 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.loginBox input {
+  padding: 5px;
+  width: 100%;
+}
+.loginBtns {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 10px;
+  margin-top: 20px;
+}
+.loginBtns button {
+  padding: 5px;
+  letter-spacing: 1px;
+}
+.loginNA {
+  text-align: center;
+}
+.guestBtn {
+  background-color: rgb(240, 183, 240);
+  padding: 4px 13px;
+  cursor: pointer;
+  font-family: poppins;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 786px) {
+  .loginBox {
+    padding: 10px;
+    width: 90%;
+  }
+  .loginForm {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 786px) and (max-width: 1050px) {
+  .loginBox {
+    padding: 10px;
+    width: 70%;
+  }
+}

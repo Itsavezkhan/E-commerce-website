@@ -1,0 +1,22 @@
+.DropDown{
+    background-color: whitesmoke;
+    position: absolute;
+    top: 60px;
+    right: 2px;
+    padding: 10px 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.DropDown span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.loginNA {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+  }
