@@ -42,7 +42,7 @@ const Productlist = () => {
     }
     if (sorting) {
       NewProducts = NewProducts.filter((product) => {
-        return product.title.toLowerCase().includes(sorting);
+        return product.title.includes(sorting);
       });
     }
     if (price) {
