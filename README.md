@@ -10,8 +10,8 @@ To run the we shopp ecommerce web application locally, please follow these steps
 * npm install
 * npm start
 ## Technologies Used
-ReactJS
-React Context API + useReducer
-Core CSS
-Razorpay payment gateway
+* ReactJS
+* React Context API + useReducer
+* Plain CSS
+* Razorpay payment gateway
 
