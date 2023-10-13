@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# WE SHOPP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+We shopp is a platform dedicated to providing a seamless shopping experience for various E-commerce products.
+
 
 ## Available Scripts
 
