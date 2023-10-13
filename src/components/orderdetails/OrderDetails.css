@@ -1,0 +1,35 @@
+.OrderD_main{
+    padding: 40px;
+    border: 2px solid purple;
+    background-color: rgb(234, 213, 234);
+}
+.OrderD_main h2{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+    font-size: 27px;
+}
+.OrderD_inner{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 19rem;
+}
+.OrderD_total{
+    display: flex;
+    justify-content: space-between;
+    width: 19rem;
+    margin-top: 15px;
+    border-top: 2px solid purple;
+    padding-top: 10px;
+}
+.OrderD_main button{
+    padding: 10px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    width: 100%;
+}

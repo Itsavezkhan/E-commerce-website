@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Cart from "./pages/cart";
 import Wish from "./pages/wish";
 import Login from "./pages/Login";
+import Placeorder from "./pages/placeorder";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/wish" element={<Wish />}></Route>
           <Route path="/singlecart/:id" element={<SingleCart />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/placeorder" element={<Placeorder />}></Route>
         </Routes>
       </div>
     </>

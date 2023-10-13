@@ -1,0 +1,78 @@
+.PO_container{
+    margin-top: 70px;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+.PO_address_main{
+    width: 70%;
+    padding: 40px;
+    background-color: rgb(232, 200, 253);
+}
+.PO_address_main h1{
+    font-size: 35px;
+    font-weight: 500;
+    font-family:sans-serif;
+    background-color: rgb(235, 204, 235);
+    width: 180px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.PO_address_main h4{
+    padding: 4px 9px;
+    width: 180px;
+    font-weight: 200;
+    border: 2px solid purple;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+.PO_address_main h4:hover{
+    background-color: purple;
+    cursor: pointer;
+    color: white;
+}
+.PO_left_main{
+    display: flex;
+    gap: 20px;
+}
+.PO_add_names label{
+    font-size: 27px;
+    font-weight: 300;
+}
+.PO_add_names p{
+    font-size: 15px;
+    font-family: poppins;
+    letter-spacing: 1px;
+    font-weight: 200;
+}
+.PO_PlaceOrder{
+    width: 30%;
+    border: 2px solid purple;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 769px) {
+    .PO_container{
+        flex-direction: column;
+    }
+    .PO_address_main{
+        width: 100%;
+    }
+    .PO_PlaceOrder{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 770px) and (max-width: 950px)  {
+    .PO_PlaceOrder{
+        width: 60%;
+    }
+}
+@media screen and (min-width: 951px) and (max-width: 1270px) {
+    .PO_PlaceOrder{
+        width: 55%;
+    }
+}

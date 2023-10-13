@@ -50,6 +50,11 @@ const reducer = (state, action) => {
         ...state,
         ourwish: [...state.ourwish, { ...action.payload, qty: 1 }],
       };
+    case "CALCULATE_TOTAL":
+      return {
+        ...state,
+        total: action.payload.reduce((acc, cur) => acc + Number(cur.price) * cur.qty, 0),
+      };
 
     default:
       return state;

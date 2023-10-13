@@ -5,7 +5,7 @@ import { useCustom } from "../context/context";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Singlecart = ({ prod, setTotal, id }) => {
+const Singlecart = ({ prod, id }) => {
   const { ourcart, dispatch } = useCustom();
 
   const [amount, setAmount] = useState(1);

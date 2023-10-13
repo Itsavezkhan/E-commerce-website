@@ -18,7 +18,6 @@ const Productlist = () => {
     filterdispatch,
     dispatch,
   } = useCustom();
-  console.log(sorting);
   let NewProducts = weproducts;
 
   const TransformProducts = () => {
@@ -50,8 +49,6 @@ const Productlist = () => {
         return product.price <= price;
       })
     }
-
-    console.log(NewProducts);
 
     return NewProducts;
   };

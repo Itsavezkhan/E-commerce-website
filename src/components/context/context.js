@@ -6,6 +6,7 @@ import { loginReducer } from "../context/reducer";
 
 const OurContext = createContext();
 
+
 const API = "https://fakestoreapi.com/products";
 
 const initialState = {
@@ -13,7 +14,9 @@ const initialState = {
   wesingleproducts: {},
   ourcart: [],
   ourwish: [],
+  total: 0,
 };
+
 
 const filterInitialState = {
   sort: "",
@@ -30,6 +33,7 @@ const loginInitialState = {
 };
 
 const OurContextProvider = ({ children }) => {
+
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const [filterstate, filterdispatch] = useReducer(filterreducer, filterInitialState);
@@ -68,9 +72,54 @@ const OurContextProvider = ({ children }) => {
     });
   };
 
+  const loadscript = (src) => {
+    return new Promise((resolve) =>  {
+      const script = document.createElement('script')
+      script.src = src
+
+      script.onload = () => {
+        resolve(true)
+      }
+
+      script.onerror = () => {
+        resolve(false)
+      }
+
+      document.body.appendChild(script)
+    })
+  }
+
+  const handlePayment = async (total) => {
+    const res = await loadscript("https://checkout.razorpay.com/v1/checkout.js")
+    
+    if (!res) {
+      alert("you are offline.....failed to load razorpay")
+      return
+    }
+
+    const options = {
+      key: "rzp_test_8LDootk7EkOdw9",
+      currency: "USD",
+      amount: total * 100,
+      name: "We shopp",
+      description:  "thanks for purchasing",
+
+      handler: function (response) {
+        alert(response.razorpay_payment_id)
+        alert("payment successfull")
+      },
+      prefill: {
+        name:"we shopp"
+      }
+    };
+    const paymentObject = new window.Razorpay(options)
+    paymentObject.open()
+  }
+
   useEffect(() => {
     GetApiData(API);
   }, []);
+
 
   return (
     <OurContext.Provider
@@ -78,6 +127,7 @@ const OurContextProvider = ({ children }) => {
         ...state,
         getSingleProduct,
         handlePriceRange,
+        handlePayment,
         dispatch,
         filterstate,
         filterdispatch,
