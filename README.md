@@ -5,10 +5,10 @@ We shopp is a platform dedicated to providing a seamless shopping experience for
 ## Getting Started
 To run the we shopp ecommerce web application locally, please follow these steps:
 
-git clone[ https://github.com/SandhyaR1007/eyesome-react.git](https://github.com/Itsavezkhan/E-commerce-website.git)
-cd weshopp-react
-npm install
-npm start
+* git clone [https://github.com/Itsavezkhan/E-commerce-website.git]
+* cd weshopp-react
+* npm install
+* npm start
 ## Technologies Used
 ReactJS
 React Context API + useReducer
