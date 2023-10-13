@@ -14,4 +14,16 @@ To run the we shopp ecommerce web application locally, please follow these steps
 * React Context API + useReducer
 * Plain CSS
 * Razorpay payment gateway
+## Features
+* Home Page
+* Product Listing Page
+* Filters
+* Search
+* Cart Management
+* Wishlist Management
+* Checkout Page
+* Payment gateway integration
+* Authentication
+* Responsiveness
+* Loaders and Toasts
 
