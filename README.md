@@ -8,7 +8,6 @@ To run the we shopp ecommerce web application locally, please follow these steps
 * git clone [https://github.com/Itsavezkhan/E-commerce-website.git]
 * cd weshopp-react
 * npm install
-* this is avez
 * npm start
 ## Technologies Used
 * ReactJS
