@@ -1,6 +1,5 @@
 import React from 'react'
 import { useCustom } from '../context/context';
-// import Product from '../product';
 import Product from '../product/Product';
 import { Link } from 'react-router-dom';
 import './Topproducts.css';
@@ -10,7 +9,6 @@ const Topproducts = () => {
 
     const topitems = weproducts.slice(0, 8);
     console.log(topitems)
-    // <Product {...prod} />
   return (
     <>
        <div className='TP_container'>

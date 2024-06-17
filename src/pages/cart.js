@@ -25,7 +25,6 @@ const Cart = () => {
 
   useEffect(() => {
     dispatch({ type: "CALCULATE_TOTAL", payload: ourcart });
-
   }, [ourcart]);
 
   return (

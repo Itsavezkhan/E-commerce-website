@@ -44,7 +44,7 @@ const OurContextProvider = ({ children }) => {
     try {
       const res = await axios.get(url);
       const productsapi = await res.data;
-      console.log(productsapi);
+      // console.log(productsapi);
       dispatch({ type: "SET_API_DATA", payload: productsapi });
     } catch (error) {
       dispatch({ type: "ERROR_API" });
@@ -55,7 +55,7 @@ const OurContextProvider = ({ children }) => {
     try {
       const res = await axios.get(url);
       const singleproduct = await res.data;
-      console.log(singleproduct);
+      // console.log(singleproduct);
       dispatch({ type: "SINGLE_PRODUCT_DATA", payload: singleproduct });
     } catch (error) {
       dispatch({ type: "ERROR_API" });
